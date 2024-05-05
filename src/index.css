@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------- */
+/* CSS Reset */
+/* --------------- */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: Jost, sans-serif;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: #fff !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@layer base {
+}
+
+@layer components {
+}
+
+@layer utilities {
+  /* Typography */
+  .heading-lg {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.125;
+  }
+
+  .heading-md {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.125;
+  }
+
+  .heading-md-wide {
+    letter-spacing: 1.4px;
+    font-size: 2rem;
+    line-height: 1.2857;
+  }
+
+  .heading-sm {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    letter-spacing: 5px;
+  }
+
+  .heading-services {
+    font-size: 1.75rem;
+    line-height: 1.28;
+    letter-spacing: 1.4px;
+  }
+
+  .main-text {
+    font-size: 0.875rem;
+    line-height: 1.666;
+    color: #fff;
+  }
+
+  .secondary-text {
+    font-size: 1rem;
+    line-height: 1.625;
+    @apply text-dark-grey;
+  }
+
+  /* Layout */
+
+  .container {
+    @apply px-6 max-w-none mx-auto md:px-10 lg:max-w-[1110px] xl:px-0;
+  }
+
+  .bg-rotate {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: url('assets/shared/desktop/bg-pattern-small-circle.svg')
+      no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .bg-rotate-270 {
+    transform: translateX(-50%) rotate(270deg);
+  }
+  .bg-rotate-0 {
+    transform: translateX(-50%) rotate(0deg);
+  }
+  .bg-rotate-45 {
+    transform: translateX(-50%) rotate(45deg);
+  }
+
+  @media (min-width: 768px) {
+    .heading-lg {
+      font-size: 3rem;
+      line-height: 1;
+    }
+
+    .heading-md {
+      font-size: 2.5rem;
+      line-height: 1;
+    }
+
+    .heading-md-wide {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: 2px;
+    }
+
+    .heading-services {
+      font-size: 2.5rem;
+      line-height: 1.2;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .main-text {
+      font-size: 1rem;
+      line-height: 1.625;
+    }
+
+    .secondary-text {
+      font-size: 1rem;
+      line-height: 1.625;
+    }
+
+    .bg-rotate-270 {
+      transform: translateX(-50%) rotate(270deg);
+    }
+    .bg-rotate-0 {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    .bg-rotate-45 {
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .bg-rotate {
+      left: 50%;
+    }
+
+    .bg-rotate-270 {
+      transform: translateX(-50%) rotate(270deg);
+    }
+    .bg-rotate-0 {
+      transform: translateX(-50%) rotate(0deg);
+    }
+    .bg-rotate-45 {
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+}
