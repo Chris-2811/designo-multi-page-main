@@ -1,4 +1,3 @@
-import React from 'react';
 import talentImage from '@/assets/about/mobile/image-world-class-talent.jpg';
 import talentImageTablet from '@/assets/about/tablet/image-world-class-talent.jpg';
 import talentImageDesktop from '@/assets/about/desktop/image-world-class-talent.jpg';

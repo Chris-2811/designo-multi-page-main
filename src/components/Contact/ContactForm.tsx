@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import * as React from 'react';
 import { Input } from '../ui/Input';
 import { Button } from '../ui/button';
 import iconError from '@/assets/contact/desktop/icon-error.svg';
@@ -137,8 +138,8 @@ function ContactForm() {
         <textarea
           name="message"
           id="message"
-          cols="30"
-          rows="5"
+          cols={30}
+          rows={5}
           maxLength={500}
           placeholder="Your Message"
           className="bg-transparent placeholder:text-white/50  border-b w-full pl-[0.75rem] outline-none resize-none"
@@ -155,6 +156,7 @@ function ContactForm() {
       <div className="mt-10 md:mt-6 flex justify-center md:justify-end">
         <Button>Submit</Button>
       </div>
+      {submitted && <h1>Form submitted</h1>}
     </form>
   );
 }

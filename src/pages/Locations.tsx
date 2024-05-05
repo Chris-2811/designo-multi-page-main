@@ -1,6 +1,4 @@
 import LocationsMap from '@/components/Locations/LocationsMap';
-import LocationDetails from '@/components/shared/LocationDetails';
-import React from 'react';
 
 function Locations() {
   return (

@@ -1,5 +1,3 @@
-import React from 'react';
-
 function ProjectCard({ item }: any) {
   return (
     <div className="rounded-[15px] overflow-hidden  md:flex items-center md:h-[310px] lg:h-auto lg:flex-col">

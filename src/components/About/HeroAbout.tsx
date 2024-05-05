@@ -1,4 +1,3 @@
-import React from 'react';
 import heroImage from '@/assets/about/mobile/image-about-hero.jpg';
 import heroImageTablet from '@/assets/about/tablet/image-about-hero.jpg';
 import heroImageDesktop from '@/assets/about/desktop/image-about-hero.jpg';

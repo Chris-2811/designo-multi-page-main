@@ -1,4 +1,3 @@
-import React from 'react';
 import passionate from '@/assets/home/desktop/illustration-passionate.svg';
 import resourceful from '@/assets/home/desktop/illustration-resourceful.svg';
 import friendly from '@/assets/home/desktop/illustration-friendly.svg';

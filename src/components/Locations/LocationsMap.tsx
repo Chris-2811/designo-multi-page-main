@@ -1,9 +1,7 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker } from 'react-leaflet';
 
 function LocationsMap({ location }: { location: string }) {
-  const position =
+  const position: [number, number] =
     location === 'canada'
       ? [43.648178, -79.375748]
       : location === 'australia'

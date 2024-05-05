@@ -1,4 +1,3 @@
-import React from 'react';
 import HeroContact from '@/components/Contact/HeroContact';
 import LocationDetails from '@/components/shared/LocationDetails';
 

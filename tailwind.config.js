@@ -28,8 +28,6 @@ export default {
         'graphic-design':
           "url('@/assets/home/mobile/image-graphic-design.jpg')",
         circle: "url('@/assets/shared/desktop/bg-pattern-small-circle.svg')",
-        'pattern-design-pages':
-          "url('@/assets/home/desktop/bg-pattern-design-pages-intro-mobile.svg')",
 
         /* CTA */
         'pattern-call-to-action':
@@ -44,9 +42,9 @@ export default {
         'pattern-design-mobile':
           "url('@/assets/shared/mobile/bg-pattern-design-pages-intro-mobile.svg')",
         'pattern-design-tablet':
-          "url('@/assets/shared/mobile/bg-pattern-design-pages-intro-tablet.svg')",
-        'pattern-design-desktop':
-          "url('@/assets/shared/mobile/bg-pattern-design-pages-intro-desktop.svg')",
+          "url('@/assets/shared/tablet/bg-pattern-design-pages-intro-tablet.svg')",
+        /* 'pattern-design-desktop':
+          "url('@/assets/shared/desktop/bg-pattern-design-pages-intro-desktop.svg')", */
 
         /* Contact */
         'pattern-hero-contact':

@@ -1,4 +1,3 @@
-import React from 'react';
 import imageDesktop from '@/assets/about/desktop/image-real-deal.jpg';
 import imageMobile from '@/assets/about/mobile/image-real-deal.jpg';
 import imageTablet from '@/assets/about/tablet/image-real-deal.jpg';

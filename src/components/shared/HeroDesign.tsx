@@ -1,4 +1,3 @@
-import React from 'react';
 import { useLocation } from 'react-router-dom';
 
 function HeroDesign() {
@@ -6,7 +5,7 @@ function HeroDesign() {
 
   return (
     <section className="md:container ">
-      <div className="bg-peach relative bg-pattern-design-mobile md:bg-pattern-design-tablet lg:bg-pattern-design-desktop text-center  py-[6.5625rem] md:px px-6 md:px-10  overflow-hidden md:rounded-[15px] bg-right-top">
+      <div className="bg-peach relative  lg:bg-pattern-design-desktop text-center  py-[6.5625rem] md:px px-6 md:px-10  overflow-hidden md:rounded-[15px] bg-right-top">
         <div className="absolute bg-pattern-design-pages w-full h-full"></div>
         <div>
           <h1

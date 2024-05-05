@@ -1,6 +1,4 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import { Button } from './components/ui/button';
-import { Input } from './components/ui/Input';
 import Footer from './components/shared/Footer';
 import {
   Home,

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import arrowRight from '@/assets/shared/desktop/icon-right-arrow.svg';
 import { useLocation } from 'react-router-dom';

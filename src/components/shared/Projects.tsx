@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import ProjectCard from '../ui/ProjectCard';
 import { webProjects, appProjects, graphicProjects } from '@/data/index.ts';
 import { useState } from 'react';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Button } from '../ui/button';
 import imageCanada from '@/assets/shared/desktop/illustration-canada.svg';
 import imageAustralia from '@/assets/shared/desktop/illustration-australia.svg';

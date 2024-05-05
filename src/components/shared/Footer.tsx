@@ -1,4 +1,3 @@
-import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '@/assets/shared/desktop/logo-light.png';
 import CTA from './CTA';
