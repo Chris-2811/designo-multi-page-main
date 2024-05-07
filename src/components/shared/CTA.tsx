@@ -1,13 +1,10 @@
 import { Button } from '../ui/button';
+import { Link } from 'react-router-dom';
 
 function CTA() {
   return (
     <section className="container">
-      <div className="bg-peach relative py-16 md:py-14 px-6 lg:px-[6rem] text-white rounded-[15px] text-center lg:text-left lg:h-[292px] ">
-        <div
-          className="absolute top-0 left-0 bg-pattern-call-to-action  lg:bg-no-repeat bg-625px-right md:bg-858px-right lg:left-auto lg:right-0 lg:bg-0px-right lg:w-[876px] h-full
-          "
-        ></div>
+      <div className="bg-peach bg-pattern-call-to-action bg-center-right-25 md:bg-center-right-70 lg:bg-right bg-no-repeat  relative py-16 md:py-14 px-6 lg:px-[6rem] text-white rounded-[15px] text-center lg:text-left lg:h-[292px] ">
         <div className="z-10 relative lg:flex items-center justify-between">
           <div>
             <h1 className="heading-lg mb-4 lg::mb-6 max-w-[335px] mx-auto lg:mx-0 ">
@@ -19,7 +16,9 @@ function CTA() {
             </p>
           </div>
           <div className="mt-8 lg:mt-0">
-            <Button>Get in touch</Button>
+            <Button asChild>
+              <Link to="/contact">Get in touch</Link>
+            </Button>
           </div>
         </div>
       </div>

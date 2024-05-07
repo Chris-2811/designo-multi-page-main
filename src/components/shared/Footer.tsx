@@ -21,7 +21,7 @@ function Footer() {
 
   return (
     <footer
-      className={`relative ${spacingStyles}  bg-black text-white  pb-16 px-6 text-center`}
+      className={`relative ${spacingStyles}  bg-black text-white  pb-16 px-6 text-center lg:pb-[4.5rem]`}
     >
       <div className="container">
         {location.pathname !== '/contact' && (
@@ -31,7 +31,9 @@ function Footer() {
         )}
         <div className="md:flex items-center justify-between md:border-b md:border-b-white/10">
           <div className=" pb-8 border-b border-b-white/10 md:border-b-0">
-            <img src={logo} alt="logo" className="w-[197px] mx-auto" />
+            <NavLink to="/">
+              <img src={logo} alt="logo" className="w-[197px] mx-auto" />
+            </NavLink>
           </div>
           <nav aria-label="secondary-navigation" className="mb-12 mt-8">
             <ul
@@ -39,7 +41,7 @@ function Footer() {
               className="uppercase space-y-8 tracking-[2px] text-sm leading-none md:flex items-center md:space-y-0 gap-10"
             >
               <li>
-                <NavLink to="/">Our Company</NavLink>
+                <NavLink to="/about">Our Company</NavLink>
               </li>
               <li>
                 <NavLink to="/locations">Locations</NavLink>

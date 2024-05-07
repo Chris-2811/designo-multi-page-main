@@ -19,7 +19,7 @@ function Projects() {
   });
 
   return (
-    <section className="my-[6rem] md:my-[7.5rem]">
+    <section className="my-[6rem] md:my-[7.5rem] lg:my-[10rem]">
       <div className="container grid  gap-10 lg:grid-cols-3 ">
         {data &&
           data.map((item: any) => <ProjectCard key={item.id} item={item} />)}

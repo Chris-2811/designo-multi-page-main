@@ -17,7 +17,7 @@ function Services() {
       >
         {pathname !== '/web-design' && (
           <div
-            className={`bg-web-design relative h-[250px] rounded-[15px] bg-no-repeat bg-cover grid place-items-center group overflow-hidden lg:row-span-2 ${webDesignHeight}  cursor-pointer `}
+            className={`bg-web-design md:bg-web-design-tablet lg:bg-web-design-desktop relative h-[250px] rounded-[15px] bg-no-repeat bg-cover grid place-items-center group overflow-hidden lg:row-span-2 ${webDesignHeight}  cursor-pointer `}
           >
             <div className="absolute inset-0 bg-black/50 -z-10"></div>
 
@@ -37,7 +37,7 @@ function Services() {
           </div>
         )}
         {pathname !== '/app-design' && (
-          <div className="bg-app-design relative h-[250px] rounded-[15px] bg-no-repeat bg-cover grid place-items-center overflow-hidden group lg:h-[308px]  cursor-pointer">
+          <div className="bg-app-design md:bg-app-design-tablet lg:bg-app-design-desktop relative h-[250px] rounded-[15px] bg-no-repeat bg-cover grid place-items-center overflow-hidden group lg:h-[308px]  cursor-pointer">
             <div className="absolute inset-0 bg-black/50"></div>
             <div className="absolute inset-0 group-hover:bg-peach/50"></div>
             <div className="z-10">
@@ -55,7 +55,7 @@ function Services() {
           </div>
         )}
         {pathname !== '/graphic-design' && (
-          <div className="bg-graphic-design relative h-[250px] rounded-[15px] bg-no-repeat bg-cover grid place-items-center overflow-hidden group lg:h-[308px] cursor-pointer">
+          <div className="bg-graphic-design md:bg-graphic-design-tablet lg:bg-graphic-design-desktop relative h-[250px] rounded-[15px] bg-no-repeat bg-cover grid place-items-center overflow-hidden group lg:h-[308px] cursor-pointer">
             <div className="absolute inset-0 bg-black/50"></div>
             <div className="absolute inset-0 group-hover:bg-peach/50"></div>
 

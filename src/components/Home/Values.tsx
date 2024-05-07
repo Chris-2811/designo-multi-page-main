@@ -1,12 +1,15 @@
 import passionate from '@/assets/home/desktop/illustration-passionate.svg';
 import resourceful from '@/assets/home/desktop/illustration-resourceful.svg';
 import friendly from '@/assets/home/desktop/illustration-friendly.svg';
+import Rectangle from '../ui/Rectangle';
 
 function Values() {
   return (
-    <section className="mt-[7.5rem] lg:mt-[8.75rem] mb-[120px] ">
+    <section className="mt-[7.5rem] lg:my-[10rem]  ">
       <div className="container relative text-center space-y-20 lg:flex items-center justify-between gap-[1.875rem] lg:space-y-0 ">
-        <div className="absolute hidden lg:block w-[1086px] h-[594px] bg-[#F1F3F5] opacity-50 rounded-l-[279px] rounded-br-[279px] left-[279px] top-32 -z-20"></div>
+        <div className="absolute left-[279px] top-32 -z-20">
+          <Rectangle />
+        </div>
         <div className="flex flex-col items-center  md:flex-row md:gap-12 md:text-left lg:flex-col lg:text-center">
           <div className="relative w-full ">
             <div className="absolute max-w-[202px] bg-rotate bg-rotate-90 bg-rotate-0 left-0"></div>
