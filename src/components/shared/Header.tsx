@@ -9,10 +9,10 @@ function Header() {
 
   return (
     <header
-      className="bg-white
+      className="bg-white z-100 relative
     "
     >
-      <div className="container max-w-none bg-white relative z-20 py-[2.125rem] md:py-16 flex justify-between items-center">
+      <div className="container max-w-none bg-white relative z-40 py-[2.125rem] md:py-16 flex justify-between items-center">
         <div className="w-[202px]">
           <NavLink to="/">
             <img src={logo} alt="" />
@@ -56,11 +56,11 @@ function Header() {
       </div>
       {modalOpen && (
         <div className="md:hidden">
-          <div className="absolute w-full text-black bg-black px-6 py-12 z-20 ">
+          <div className="absolute w-full text-black bg-black px-6 py-12 z-50  ">
             <nav>
               <ul
                 role="list"
-                className="text-white uppercase text-2xl flex flex-col gap-8"
+                className="text-white uppercase text-2xl flex flex-col gap-8 tracking-[2px]"
               >
                 <NavLink onClick={() => setModalOpen(!modalOpen)} to="/about">
                   <li>Our Company</li>
@@ -77,7 +77,7 @@ function Header() {
               </ul>
             </nav>
           </div>
-          <div className="bg-black/50 inset-0 absolute z-10"></div>
+          <div className="bg-black/50 inset-0 fixed  z-30  min-h-screen "></div>
         </div>
       )}
     </header>

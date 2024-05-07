@@ -8,7 +8,7 @@ function CTA() {
         <div className="z-10 relative lg:flex items-center justify-between">
           <div>
             <h1 className="heading-lg mb-4 lg::mb-6 max-w-[335px] mx-auto lg:mx-0 ">
-              Let's talk about your project
+              Let's talk about <br /> your project
             </h1>
             <p className="main-text max-w-[445px] mx-auto">
               Ready to take it to the next level? Contact us today and find out

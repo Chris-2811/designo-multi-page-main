@@ -230,14 +230,18 @@ input[type='number']::-webkit-outer-spin-button {
       line-height: 1.625;
     }
 
+    .bg-rotate {
+      left: 0;
+    }
+
     .bg-rotate-270 {
-      transform: translateX(-50%) rotate(270deg);
+      transform: rotate(270deg);
     }
     .bg-rotate-0 {
-      transform: translateX(-50%) rotate(0deg);
+      transform: rotate(0deg);
     }
     .bg-rotate-45 {
-      transform: translateX(-50%) rotate(45deg);
+      transform: rotate(45deg);
     }
   }
 
