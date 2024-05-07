@@ -14,8 +14,8 @@ function Header() {
     >
       <div className="container max-w-none bg-white relative z-40 py-[2.125rem] md:py-16 flex justify-between items-center">
         <div className="w-[202px]">
-          <NavLink to="/">
-            <img src={logo} alt="" />
+          <NavLink to="/" aria-label="Home">
+            <img src={logo} alt="Company logo" />
           </NavLink>
         </div>
         <div
@@ -35,21 +35,15 @@ function Header() {
               role="list"
               className="text-dark-grey uppercase flex items-center gap-10 text-sm tracking-[2px] leading-none"
             >
-              <NavLink to="/about">
-                <li className="border-b-2 border-b-transparent hover:border-b-black/20">
-                  Our company
-                </li>
-              </NavLink>
-              <NavLink to="/locations">
-                <li className="border-b border-b-transparent hover:border-b-black/20">
-                  locations
-                </li>
-              </NavLink>
-              <NavLink to="/contact">
-                <li className="border-b-2 border-b-transparent hover:border-b-black/20">
-                  contact
-                </li>
-              </NavLink>
+              <li className="border-b-2 border-b-transparent hover:border-b-black/20">
+                <NavLink to="/about">Our company</NavLink>
+              </li>
+              <li className="border-b border-b-transparent hover:border-b-black/20">
+                <NavLink to="/locations">locations</NavLink>
+              </li>
+              <li className="border-b-2 border-b-transparent hover:border-b-black/20">
+                <NavLink to="/contact">contact</NavLink>
+              </li>
             </ul>
           </nav>
         </div>
@@ -62,18 +56,27 @@ function Header() {
                 role="list"
                 className="text-white uppercase text-2xl flex flex-col gap-8 tracking-[2px]"
               >
-                <NavLink onClick={() => setModalOpen(!modalOpen)} to="/about">
-                  <li>Our Company</li>
-                </NavLink>
-                <NavLink
-                  onClick={() => setModalOpen(!modalOpen)}
-                  to="/locations"
-                >
-                  <li>Locations</li>
-                </NavLink>
-                <NavLink onClick={() => setModalOpen(!modalOpen)} to="/contact">
-                  <li>contact</li>
-                </NavLink>
+                <li>
+                  <NavLink onClick={() => setModalOpen(!modalOpen)} to="/about">
+                    Our Company
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    onClick={() => setModalOpen(!modalOpen)}
+                    to="/locations"
+                  >
+                    Locations
+                  </NavLink>
+                </li>
+                <li>
+                  <NavLink
+                    onClick={() => setModalOpen(!modalOpen)}
+                    to="/contact"
+                  >
+                    contact
+                  </NavLink>
+                </li>
               </ul>
             </nav>
           </div>

@@ -13,14 +13,14 @@ function LocationsMap({ location }: { location: string }) {
       center={position}
       zoom={13}
       scrollWheelZoom={true}
-      style={{ minHeight: '340px', minWidth: '100%' }}
+      style={{ minHeight: '100vh', minWidth: '100vw' }}
     >
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
       <Marker position={position}>
-        {/*   <Popup>
+        {/* <Popup>
           A pretty CSS3 popup. <br /> Easily customizable.
         </Popup> */}
       </Marker>

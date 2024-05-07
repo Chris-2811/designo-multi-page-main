@@ -31,8 +31,12 @@ function Footer() {
         )}
         <div className="md:flex items-center justify-between md:border-b md:border-b-white/10">
           <div className=" pb-8 border-b border-b-white/10 md:border-b-0">
-            <NavLink to="/">
-              <img src={logo} alt="logo" className="w-[197px] mx-auto" />
+            <NavLink to="/" aria-label="Home">
+              <img
+                src={logo}
+                alt="Company logo"
+                className="w-[197px] mx-auto"
+              />
             </NavLink>
           </div>
           <nav aria-label="secondary-navigation" className="mb-12 mt-8">
@@ -77,7 +81,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={facebook} alt="facebook" />
+                  <img src={facebook} alt="" />
                   <span className="sr-only">Facebook</span>
                 </a>
               </li>
@@ -87,7 +91,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={youtube} alt="youtube" />
+                  <img src={youtube} alt="" />
                   <span className="sr-only">Youtube</span>
                 </a>
               </li>
@@ -97,7 +101,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={twitter} alt="twitter" />
+                  <img src={twitter} alt="" />
                   <span className="sr-only">Twitter</span>
                 </a>
               </li>
@@ -107,7 +111,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={pinterest} alt="pinterest" />
+                  <img src={pinterest} alt="" />
                   <span className="sr-only">Pinterest</span>
                 </a>
               </li>
@@ -117,7 +121,7 @@ function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img src={instagram} alt="instagram" />
+                  <img src={instagram} alt="" />
                   <span className="sr-only">Instagram</span>
                 </a>
               </li>

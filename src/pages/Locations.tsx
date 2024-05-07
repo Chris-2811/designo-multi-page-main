@@ -24,7 +24,7 @@ function Locations() {
             <div className="absolute top-0 left-0 md:hidden">
               <GradientCircle />
             </div>
-            <div className="absolute left-0 flex md:bottom-0">
+            <div className="absolute left-0 flex top-[292px] md:top-auto md:bottom-0">
               <div className="md:rotate-180">
                 <GradientCircle />
               </div>
@@ -60,7 +60,7 @@ function Locations() {
             <div className="absolute top-0 left-0 md:hidden">
               <GradientCircle />
             </div>
-            <div className="absolute left-0 flex md:bottom-0">
+            <div className="absolute left-0 flex top-[292px] md:top-auto md:bottom-0">
               <div className="md:rotate-180">
                 <GradientCircle />
               </div>
@@ -96,7 +96,7 @@ function Locations() {
             <div className="absolute top-0 left-0 md:hidden">
               <GradientCircle />
             </div>
-            <div className="absolute left-0 flex md:bottom-0">
+            <div className="absolute left-0 flex top-[292px] md:top-auto md:bottom-0">
               <div className="md:rotate-180">
                 <GradientCircle />
               </div>
